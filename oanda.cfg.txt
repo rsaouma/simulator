@@ -1,0 +1,4 @@
+[oanda]
+account_id = 101-001-21035569-001
+access_token = db32eb32141f1c161000c36b0195e992-b153887ed81ed4a003944555ebe1d1ac
+account_type = practice
