@@ -15,3 +15,7 @@ def add(x,y):
 
 def test1(x):
     return 2
+
+
+def test2(x):
+    return 5
