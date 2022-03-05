@@ -11,3 +11,7 @@ print('test')
 
 def add(x,y):
     return x+y
+
+
+def test1(x):
+    return 2
