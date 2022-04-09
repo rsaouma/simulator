@@ -36,7 +36,7 @@ class Position(object):
         assert entry_price > 0, 'Cannot buy asset with zero or negative price.'
         self.entry_price = entry_price
 
-        #assert units > 0, 'Cannot buy zero or negative shares.'
+        # assert units > 0, 'Cannot buy zero or negative shares.'
         self.units = units
 
         self.symbol = symbol
@@ -169,8 +169,6 @@ class Position(object):
         return hash((self.entry_date, self.symbol))
 
 
-
-
 if __name__ == '__main__':
     df = pd.read_csv('Data/AUD.CSV')
     df['time'] = pd.to_datetime(df['time'])
@@ -181,12 +179,10 @@ if __name__ == '__main__':
         date = row.time
         price = row.c
         if i == 123:
-             position = Position('AUDUSD', date, price, units_to_trade)
-        elif 123< i < 534:
-             position.record_price_update(date, price)
-        elif i== 534:
-             position.exit(date,price)
-
+            position = Position('AUDUSD', date, price, units_to_trade)
+        elif 123 < i < 534:
+            position.record_price_update(date, price)
+        elif i == 534:
+            position.exit(date, price)
 
     position.print_position_summary()
-
