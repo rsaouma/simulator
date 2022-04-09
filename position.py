@@ -190,3 +190,6 @@ if __name__ == '__main__':
 
     position.print_position_summary()
 
+#added some remarks to test Git
+
+xr = 5
